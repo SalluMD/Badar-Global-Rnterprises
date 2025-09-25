@@ -1,0 +1,53 @@
+const images = {
+  logo: require("../assets/Images/logo.png"),
+  heroBackground: require("../assets/Images/hero-bg.jpg"),
+  ctaBackground: require("../assets/Images/cta-bg.jpg"),
+  aboutUs: require("../assets/Images/about-us.jpg"),
+  services: {
+    projectManagement: require("../assets/Images/Services/projectManagement.jpg"),
+    manPower: require("../assets/Images/Services/manPower.jpg"),
+    importExport: require("../assets/Images/Services/import-export.jpg"),
+    informationTechnology: require("../assets/Images/Services/it.jpg"),
+    buildingMaterial: require("../assets/Images/Services/buildingMaterial.jpg"),
+    landscapingConstruction: require("../assets/Images/Services/Landscaping&Construction.jpg"),
+    trading: require("../assets/Images/Services/trading.jpg"),
+    surgical: require("../assets/Images/Services/surgical.jpg"),
+    facilityManagement: require("../assets/Images/Services/facilityManagement.jpg"),
+    logistics: require("../assets/Images/Services/logistics.jpg"),
+    tourAndTravel: require("../assets/Images/Services/T&T.jpg"),
+  },
+  projects: {
+    project1: require("../assets/Images/projects/project1.jpg"),
+    project2: require("../assets/Images/projects/project2.jpg"),
+    project3: require("../assets/Images/projects/project3.jpg"),
+    project4: require("../assets/Images/projects/project4.jpg"),
+    project5: require("../assets/Images/projects/project5.jpg"),
+    project6: require("../assets/Images/projects/project6.jpg"),
+  },
+  team: {
+    member1: require("../assets/Images/team/member1.jpg"),
+    member2: require("../assets/Images/team/member2.jpg"),
+    member3: require("../assets/Images/team/member3.jpg"),
+    member4: require("../assets/Images/team/member4.jpg"),
+    member5: require("../assets/Images/team/member5.jpg"),
+    member6: require("../assets/Images/team/member6.jpg"),
+  },
+  clients: {
+    client1: require("../assets/Images/Clients/  (1).jpg"),
+    client2: require("../assets/Images/Clients/  (2).jpg"),
+    client3: require("../assets/Images/Clients/  (3).jpg"),
+    client4: require("../assets/Images/Clients/  (4).jpg"),
+    client5: require("../assets/Images/Clients/  (5).jpg"),
+    client6: require("../assets/Images/Clients/  (6).jpg"),
+  },
+  portfolio: {
+    blog1: require("../assets/Images/blog/blog1.jpg"),
+    blog2: require("../assets/Images/blog/blog2.jpg"),
+    blog3: require("../assets/Images/blog/blog3.jpg"),
+    blog4: require("../assets/Images/blog/blog4.jpg"),
+    blog5: require("../assets/Images/blog/blog5.jpg"),
+    blog6: require("../assets/Images/blog/blog6.jpg"),
+  },
+};
+
+export default images;
