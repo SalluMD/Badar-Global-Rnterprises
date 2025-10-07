@@ -42,7 +42,7 @@ export default function FounderPortfolio() {
       <section className="relative bg-gradient-to-r from-[#006881] to-[#006881] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
           <img
-            src="../../public/assets/Images/Founder_pic.png"
+            src="../../public/assets/Images/Profile/2.jpg"
             alt="Founder"
             className="w-48 h-48 rounded-full shadow-lg border-4 border-white object-cover"
           />
@@ -85,7 +85,7 @@ export default function FounderPortfolio() {
               <a href="tel:+1234567890"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/20 p-3 rounded-full hover:bg-green-700 transition">
+                className="bg-white/20 p-3 rounded-full hover:bg-green-500 transition">
                 <FaPhone />
               </a>
               {/* <a href="#"
@@ -103,10 +103,16 @@ export default function FounderPortfolio() {
       <section className="max-w-7xl mx-auto px-6 py-16">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">About</h2>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit.
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">About Founder</h2>
+          <p className="text-gray-600 mt-2 max-w-l py-4 mx-auto text-justify">
+            Mohammed Arif, the founder of Badar Global Enterprise Pvt Ltd, 
+            established the company in 2005 with a vision to deliver excellence across diverse industries. 
+            Headquartered in India and with a strategic branch in Saudi Arabia, 
+            Mohammed Arif has led the company to become a trusted name, 
+            successfully completing numerous projects and offering a wide range of innovative services. 
+            With an unwavering commitment to quality, innovation, and global collaboration, 
+            Mohammed Arif has built a legacy of transformative solutions, 
+            driving the company’s growth across borders and establishing Badar Global Enterprise as a leader in its field.
           </p>
         </div>
 
@@ -119,53 +125,53 @@ export default function FounderPortfolio() {
               alt="About us"
               className="rounded-lg shadow-md"
             />
-            <p className="text-gray-700 mt-4">
-              Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis
-              quod nisi et. Placeat debitis quia recusandae odit et consequuntur
-              voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.
+            <p className="text-gray-700 mt-4 text-justify">
+              Under Mohammed Arif’s leadership, Badar Global Enterprise has grown from a visionary startup to 
+              a powerhouse with a strong presence in India and Saudi Arabia. 
+              His strategic foresight and dedication to fostering partnerships have enabled the company 
+              to undertake and deliver high-impact projects across various sectors. 
             </p>
           </div>
 
           {/* Right Content */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-              Voluptatem dignissimos provident laboris nisi ut aliquip ex ea
-              commodo
+              Mohammed Arif: Visionary Founder & Leader of Badar Global Enterprise Pvt Ltd
             </h3>
 
-            <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-gray-600 mb-4 text-justify">
+              Mohammed Arif’s ability to anticipate market needs and adapt to changing global trends has been instrumental in positioning the company as 
+              a go-to provider of innovative and reliable services, earning accolades for both quality and efficiency.
             </p>
 
             {/* Bullet Points */}
             <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-2">
-                <CheckCircle className="text-[#006881] w-5 h-5 mt-1" />
-                <span className="text-gray-700">
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <CheckCircle className="text-[#006881] w-10 h-10" />
+                <span className="text-gray-700 text-justify">
+                  Visionary Leadership: Mohammed Arif founded Badar Global Enterprise Pvt Ltd in 2005, driving its growth into 
+                  a trusted name with branches in India and Saudi Arabia through strategic vision and innovative solutions.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="text-[#006881] w-5 h-5 mt-1" />
-                <span className="text-gray-700">
-                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                <CheckCircle className="text-[#006881] w-10 h-10" />
+                <span className="text-gray-700 text-justify">
+                  Project Excellence: Under Mohammed Arif’s guidance, the company has successfully completed numerous high-impact projects, 
+                  delivering top-quality services across diverse sectors.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="text-[#006881] w-5 h-5 mt-1" />
-                <span className="text-gray-700">
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate.
+                <CheckCircle className="text-[#006881] w-10 h-10" />
+                <span className="text-gray-700 text-justify">
+                  Global Impact: Mohammed Arif’s commitment to quality and sustainability has positioned Badar Global Enterprise as a leader, 
+                  fostering partnerships and contributing to economic and community development in India and Saudi Arabia.
                 </span>
               </li>
             </ul>
 
-            <p className="text-gray-700 mb-6">
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident.
+            <p className="text-gray-700 mb-6 text-justify">
+              Mohammed Arif’s entrepreneurial journey is marked by a relentless pursuit of 
+              excellence and a deep commitment to social and economic progress. 
             </p>
 
             {/* Video Thumbnail with Play Button */}
@@ -174,7 +180,7 @@ export default function FounderPortfolio() {
               className="relative rounded-lg overflow-hidden shadow-md cursor-pointer group"
             >
               <img
-                src="../../public/assets/Images/HeroSection/3.jpg"
+                src="../../public/assets/Images/Profile/vi.jpg"
                 alt="Team work"
                 className="w-full group-hover:scale-105 transition duration-300"
               />
@@ -193,14 +199,13 @@ export default function FounderPortfolio() {
 
         {/* Bottom Text */}
         <div className="max-w-5xl mx-auto text-gray-700 space-y-4">
-          <p>
-            Temporibus nihil enim deserunt sed ea. Provident sit expedita aut
-            cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus
-            et in cum. Quidem eos ut sint rem veniam qui.
+          <p className="text-justify">
+             His leadership philosophy emphasizes empowering teams, embracing cutting-edge technologies, 
+             and maintaining a client-centric approach, which has cultivated a culture of trust and innovation within the organization. 
           </p>
-          <p>
-            Ut ut repellendus nobis tempore doloribus debitis explicabo similique
-            sint. Accusantium sed ut omnis beatae neque deleniti repellendus.
+          <p className="text-justify">
+            By fostering sustainable practices and community engagement, Mohammed Arif ensures that Badar Global Enterprise not only achieves business success but also contributes meaningfully to the regions it serves, 
+            leaving a lasting impact on both local and international landscapes.
           </p>
         </div>
 
@@ -238,7 +243,7 @@ export default function FounderPortfolio() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
           <div className="bg-white shadow-md rounded-2xl p-8">
             <h3 className="text-2xl font-bold mb-4 text-[#006881]">Vision</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               To empower businesses worldwide by providing cutting-edge
               solutions and creating opportunities for growth, sustainability,
               and innovation.
@@ -246,7 +251,7 @@ export default function FounderPortfolio() {
           </div>
           <div className="bg-white shadow-md rounded-2xl p-8">
             <h3 className="text-2xl font-bold mb-4 text-[#006881]">Mission</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               To build a global enterprise that values people, ethics, and
               technology while delivering transformative impact to clients and
               communities.
@@ -320,24 +325,36 @@ export default function FounderPortfolio() {
       </section> */}
 
       {/* Achievements */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Key Achievements</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-            <h3 className="font-semibold text-xl">Forbes 30 Under 40</h3>
-            <p className="mt-2 text-gray-700">
-              Recognized as one of the top entrepreneurs shaping the future of
-              tech.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-            <h3 className="font-semibold text-xl">GlobalCorp IPO</h3>
-            <p className="mt-2 text-gray-700">
-              Successfully led the company to go public with a $1B valuation.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="bg-[#006881] py-20">
+  <div className="max-w-6xl mx-auto px-6 text-white">
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Key Achievements
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-10">
+      {/* Achievement Card 1 */}
+      <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-2xl font-semibold mb-3">
+          Forbes 30 Under 40
+        </h3>
+        <p className="text-gray-600">
+          Recognized as one of the top entrepreneurs shaping the future of tech.
+        </p>
+      </div>
+
+      {/* Achievement Card 2 */}
+      <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-2xl font-semibold mb-3">
+          GlobalCorp IPO
+        </h3>
+        <p className="text-gray-600">
+          Successfully led the company to go public with a $1B valuation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Press & Media */}
       {/* <section className="bg-gray-100 py-16">
@@ -376,23 +393,6 @@ export default function FounderPortfolio() {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      {/* <section className="bg-gradient-to-r from-[#006881] to-[#006881] text-white py-16">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-          <p className="mb-6">
-            Interested in collaboration or partnerships? Feel free to connect
-            with me.
-          </p>
-          <a
-            href="mailto:john@globalcorp.com"
-            className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-yellow-300 transition"
-          >
-            Contact Me
-          </a>
-        </div>
-      </section> */}
       <CTA />
     </div>
   );

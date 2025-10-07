@@ -96,68 +96,95 @@ export default function ProjectDetails() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Projects</h2>
-        <p className="text-lg text-gray-600 mb-12">
-          A glimpse of our latest solutions crafted with innovation and precision.
-        </p>
+    <section id="projects" className="py-20 bg-gray-50 relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    {/* Section Header */}
+    <motion.h2
+      className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      Our <span className="text-[#000000]">Projects</span>
+    </motion.h2>
 
-        {/* Project Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mb-12">
-          {projects.map((p, i) => (
-            <motion.div
-              key={i}
-              className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col cursor-pointer p-6"
-              whileHover={{ scale: 1.03 }}
-              onClick={() => setSelected(p)}
-            >
-              {/* Icon */}
-              <p.icon className="w-12 h-12 text-[#006881] mb-4 mx-auto" />
+    <motion.p
+      className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.1 }}
+    >
+      A glimpse of our latest solutions crafted with <strong>innovation</strong> and
+      <strong> precision</strong>.
+    </motion.p>
 
-              {/* Content */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{p.title}</h3>
-              <p className="text-gray-600">{p.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-
-
-        {/* Explore More Button */}
-        <Link to='/Ourprojects' className="px-6 py-3 bg-[#006881] text-white font-semibold rounded-lg hover:bg-[#6f1f34] transition">
-          Explore More
-        </Link>
-      </div>
-
-      {/* Modal */}
-      {selected && (
-        <div
-          className="fixed inset-0 bg-[#006881] bg-opacity-70 flex items-center justify-center z-50 p-6"
-          onClick={() => setSelected(null)}
+    {/* Project Grid */}
+    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mb-12">
+      {projects.map((p, i) => (
+        <motion.div
+          key={i}
+          className="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col cursor-pointer p-6 border border-gray-100 hover:border-[#006881]/40 transition"
+          whileHover={{ y: -5 }}
+          onClick={() => setSelected(p)}
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            className="bg-white rounded-2xl shadow-xl max-w-3xl w-full p-6 relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-3 right-3 bg-gray-100 rounded-full p-2 hover:bg-gray-200"
-            >
-              ✖
-            </button>
-            <img
-              src={selected.img}
-              alt={selected.title}
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">{selected.title}</h3>
-            <p className="text-gray-700">{selected.desc}</p>
-          </motion.div>
-        </div>
-      )}
-    </section>
+          {/* Icon */}
+          <div className="flex justify-center mb-4">
+            <p.icon className="w-14 h-14 text-[#006881]" />
+          </div>
+
+          {/* Content */}
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">{p.title}</h3>
+          <p className="text-gray-600 text-sm">{p.desc}</p>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Explore More Button */}
+    <Link
+      to="/Ourprojects"
+      className="inline-block px-8 py-3 bg-[#006881] text-white font-semibold rounded-lg hover:bg-[#6f1f34] transition-all shadow-md hover:shadow-lg"
+    >
+      Explore More
+    </Link>
+  </div>
+
+  {/* Modal */}
+  {selected && (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
+      onClick={() => setSelected(null)}
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.8 }}
+        className="bg-white rounded-2xl shadow-2xl max-w-3xl w-full p-6 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setSelected(null)}
+          className="absolute top-3 right-3 bg-gray-100 rounded-full p-2 hover:bg-gray-200 transition"
+        >
+          ✖
+        </button>
+
+        {/* Image */}
+        <img
+          src={selected.img}
+          alt={selected.title}
+          className="w-full h-64 object-cover rounded-lg mb-4"
+        />
+
+        {/* Modal Content */}
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">{selected.title}</h3>
+        <p className="text-gray-700 leading-relaxed">{selected.desc}</p>
+      </motion.div>
+    </div>
+  )}
+</section>
+
   );
 }

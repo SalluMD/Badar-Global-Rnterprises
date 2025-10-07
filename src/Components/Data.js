@@ -5,18 +5,21 @@ const data = {
       desc: "From concept to completion, we deliver exceptional project management and construction excellence on time and within budget. Your project's success is our mission.",
       img: "/assets/Images/HeroSection/1.jpg",
       btn: "View Our Projects",
+      link: "/ourprojects"
     },
     {
       title: "Your Global Partner for Growth",
       desc: "Leveraging our worldwide network and multi-sector expertise to provide integrated solutions in logistics, trading, IT, and supply chain management. We connect opportunities.",
       img: "/assets/Images/HeroSection/10.jpg",
       btn: "Explore Our Solutions",
+      link: "/services"
     },
     {
       title: "Built on Trust & Expertise",
       desc: "With a highly skilled team, decades of experience, and an unwavering commitment to quality, we build lasting partnerships that drive mutual success.",
       img: "/assets/Images/HeroSection/3.jpg",
       btn: "Meet Our Team",
+      link: "/ourteam"
     },
   ],
   services: [

@@ -64,7 +64,7 @@ export default function HeroCarousel() {
               </p>
 
               <Link
-                to="featured-services"
+                to={slide.link}
                 className="px-8 py-3 bg-[#006881] hover:bg-[#6f1f34] text-white rounded-lg shadow-md transition"
               >
                 {slide.btn}

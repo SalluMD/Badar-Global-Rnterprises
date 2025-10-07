@@ -7,13 +7,15 @@ import ProjectDetails from '../Components/ProjectDetails'
 import OurClients from '../Components/OurClients'
 import Testimonials from '../Components/Testimonials'
 import CTA from '../Components/CTA'
+import WhoWeAre from '../Components/WhoWeAre'
 
 export default function Home() {
   return (
     <div className="">
         <HeroCarousel />
-        <WhatWeDo />
+        <WhoWeAre />
         <WhyChooseUs />
+        <WhatWeDo />
         <ProjectDetails />
         <Testimonials />
         <OurClients />
