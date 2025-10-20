@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 // TermsAndConditions.jsx
@@ -24,7 +25,7 @@ export default function TermsAndConditions({ effectiveDate = "25th July, 2025", 
               Print
             </button>
 
-            <a href="/privacy-policy" className="text-sm text-[#006881] hover:underline">View Privacy Policy</a>
+            <Link to="/privacy-policy" className="text-sm text-[#006881] hover:underline">View Privacy Policy</Link>
           </div>
 
           <div className="text-sm text-gray-600">By using this site you agree to these terms.</div>

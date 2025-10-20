@@ -19,42 +19,41 @@ export default function Testimonials() {
       role: "CEO, TechVision Inc.",
       feedback:
         "Partnering with this company transformed our operations. Their scalable solutions and dedicated support team are unmatched.",
-      avatar: "https://i.pravatar.cc/80?img=1",
+      avatar: "../../public/assets/Images/s4.jpg",
     },
     {
       name: "Radhika Reddy",
       role: "CEO, TechVision Inc.",
-      feedback:
-        "Partnering with this company transformed our operations. Their scalable solutions and dedicated support team are unmatched.",
-      avatar: "https://i.pravatar.cc/80?img=1",
+      feedback: "Badar Global Enterprises impressed me with top-notch expertise and dedication—highly recommended!",
+      avatar: "../../public/assets/Images/s1.jpg",
     },
     {
       name: "Chaitanya Kodela",
       role: "Head of IT, GlobalMart",
       feedback:
         "The team delivered beyond our expectations. Their expertise and professionalism helped us launch faster and stronger.",
-      avatar: "https://i.pravatar.cc/80?img=5",
+      avatar: "../../public/assets/Images/s6.jpg",
     },
     {
       name: "Sri Hari",
       role: "Director, FutureWorks",
       feedback:
         "Reliable, innovative, and customer-centric. We’ve seen tremendous growth after adopting their enterprise solutions.",
-      avatar: "https://i.pravatar.cc/80?img=15",
+      avatar: "../../public/assets/Images/s7.jpg",
     },
     {
       name: "Srinath Kantharam",
       role: "CTO, FinTech Hub",
       feedback:
         "Excellent communication and fast delivery. They’re truly a partner we can rely on. Highly recommended!",
-      avatar: "https://i.pravatar.cc/80?img=10",
+      avatar: "../../public/assets/Images/s8.jpg",
     },
     {
       name: "Priya Sharma",
       role: "Founder, EduNext",
       feedback:
-        "Our student platform reached new heights thanks to their technology solutions. Highly recommended!",
-      avatar: "https://i.pravatar.cc/80?img=20",
+        "Badar Global Enterprises wowed me with their exceptional professionalism and expertise, exceeding all expectations!",
+      avatar: "../../public/assets/Images/s2.jpg",
     },
   ];
 
@@ -124,11 +123,11 @@ export default function Testimonials() {
                       alt={t.name}
                       className="h-24 w-24 rounded-full ring-4 ring-[#006881]/20 mb-3 object-cover"
                     />
-                    <div className="flex gap-1">
+                    {/* <div className="flex gap-1">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star key={i} className="w-5 h-5 text-yellow-400" />
                       ))}
-                    </div>
+                    </div> */}
                   </div>
 
                   <p className="text-gray-700 italic mb-4 flex-grow text-center">
@@ -136,8 +135,8 @@ export default function Testimonials() {
                   </p>
 
                   <div className="pt-2 text-center">
-                    <h3 className="font-semibold text-gray-900">{t.name}</h3>
-                    <p className="text-sm text-gray-500">{t.role}</p>
+                    <h3 className="font-semibold text-gray-900 mb-8">{t.name}</h3>
+                    {/* <p className="text-sm text-gray-500">{t.role}</p> */}
                   </div>
                 </div>
               </SwiperSlide>

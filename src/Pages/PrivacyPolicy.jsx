@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 // PrivacyPolicy.jsx
 // React component for displaying the Privacy Policy page.
@@ -13,6 +14,22 @@ export default function PrivacyPolicy({ effectiveDate = "25th July, 2025", lastU
           <h1 className="text-2xl md:text-3xl font-bold">Privacy Policy</h1>
           <p className="mt-2 text-sm opacity-90">Effective Date: <span className="font-semibold">{effectiveDate}</span> · Last Updated: <span className="font-semibold">{lastUpdated}</span></p>
         </div>
+
+        {/* Actions */}
+                <div className="flex items-center justify-between px-6 py-4 border-b">
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => window.print()}
+                      className="inline-flex items-center gap-2 rounded-lg bg-gray-100 hover:bg-gray-200 px-4 py-2 text-sm"
+                    >
+                      Print
+                    </button>
+        
+                    <Link to="/privacy-policy" className="text-sm text-[#006881] hover:underline">Terms and Condition</Link>
+                  </div>
+        
+                  {/* <div className="text-sm text-gray-600">By using this site you agree to these terms.</div> */}
+                </div>
 
         {/* Content */}
         <div className="px-6 py-8 md:px-10 md:py-10 space-y-6 text-gray-800 leading-relaxed">

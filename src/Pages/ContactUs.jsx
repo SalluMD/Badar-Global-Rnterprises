@@ -56,37 +56,38 @@ export default function ContactUs() {
   };
 
   const teamCommitments = [
-    {
-      icon: FaCheckCircle,
-      title: "Excellence",
-      description: "Delivering exceptional results that exceed expectations in every interaction.",
-    },
-    {
-      icon: FaShieldAlt,
-      title: "Integrity",
-      description: "Building trust through honesty, transparency, and ethical practices.",
-    },
-    {
-      icon: FaLightbulb,
-      title: "Innovation",
-      description: "Embracing creative solutions to stay ahead in a dynamic world.",
-    },
-    {
-      icon: FaUsers,
-      title: "Collaboration",
-      description: "Working together to combine diverse expertise for shared success.",
-    },
-    {
-      icon: FaHeart,
-      title: "Customer Focus",
-      description: "Prioritizing client needs with tailored, responsive solutions.",
-    },
-    {
-      icon: FaChartLine,
-      title: "Growth",
-      description: "Fostering continuous learning to adapt and thrive in challenges.",
-    },
-  ];
+  {
+    icon: FaCheckCircle,
+    title: "Quality First",
+    description: "Ensuring every project meets the highest standards of excellence and precision.",
+  },
+  {
+    icon: FaShieldAlt,
+    title: "Trust & Ethics",
+    description: "Acting with honesty and integrity in every decision and interaction.",
+  },
+  {
+    icon: FaLightbulb,
+    title: "Creative Solutions",
+    description: "Innovating and thinking outside the box to solve complex challenges.",
+  },
+  {
+    icon: FaUsers,
+    title: "Team Synergy",
+    description: "Fostering collaboration to achieve common goals efficiently.",
+  },
+  {
+    icon: FaHeart,
+    title: "Client Success",
+    description: "Prioritizing customer satisfaction with responsive and tailored approaches.",
+  },
+  {
+    icon: FaChartLine,
+    title: "Continuous Improvement",
+    description: "Always evolving, learning, and growing to stay ahead in our field.",
+  },
+];
+
 
   return (
     <div className="w-full">

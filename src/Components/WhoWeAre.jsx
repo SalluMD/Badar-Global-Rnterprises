@@ -202,7 +202,7 @@ export default function WhoWeAre() {
                         { number: "20+", label: "Years of Excellence" },
                         { number: "15+", label: "Industries Served" },
                         { number: "100+", label: "Projects Completed" },
-                        { number: "300+", label: "Global Clients" },
+                        { number: "500+", label: "Global Clients" },
                     ].map((stat, i) => (
                         <motion.div
                             key={i}

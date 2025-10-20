@@ -5,23 +5,24 @@ const data = {
       desc: "From concept to completion, we deliver exceptional project management and construction excellence on time and within budget. Your project's success is our mission.",
       img: "/assets/Images/HeroSection/1.jpg",
       btn: "View Our Projects",
-      link: "/ourprojects"
+      link: "/ourprojects",
     },
     {
       title: "Your Global Partner for Growth",
       desc: "Leveraging our worldwide network and multi-sector expertise to provide integrated solutions in logistics, trading, IT, and supply chain management. We connect opportunities.",
       img: "/assets/Images/HeroSection/10.jpg",
       btn: "Explore Our Solutions",
-      link: "/services"
+      link: "/services",
     },
     {
       title: "Built on Trust & Expertise",
       desc: "With a highly skilled team, decades of experience, and an unwavering commitment to quality, we build lasting partnerships that drive mutual success.",
       img: "/assets/Images/HeroSection/3.jpg",
       btn: "Meet Our Team",
-      link: "/ourteam"
+      link: "/ourteam",
     },
   ],
+
   services: [
     {
       title: "Project Management",
@@ -90,7 +91,56 @@ const data = {
       image: "../../public/assets/Images/Services/T&T.jpg",
     },
   ],
+
   projects: [
+    {
+      name: "Seven Project",
+      description:
+        "The Seven Project showcases expert block installation with precision and durability at its core. Each block was meticulously placed to ensure structural integrity and a flawless finish. Combining efficiency, attention to detail, and strict adherence to safety standards, this project delivers a reliable, long-lasting foundation while reflecting professionalism and quality craftsmanship.",
+      image: "../../public/assets/Images/Projects/seven.jpg",
+      details:
+        "The Seven Project involved precise and high-quality block installation, ensuring a durable and reliable foundation. Executed with attention to detail and safety standards, it reflects professionalism and lasting craftsmanship.",
+    },
+    {
+      name: "Housing Project – MEP Installation",
+      description:
+        "Executed for National Housing Company, this project involved the precise installation of Mechanical, Electrical, and Plumbing (MEP) systems. The work ensured efficient, safe, and high-quality infrastructure, meeting all standards and delivering reliable performance.",
+      image: "../../public/assets/Images/Projects/NCH.jpg",
+      details:
+        "Executed for National Housing Company, this project involved the precise installation of mechanical, electrical, and plumbing systems. Completed with high-quality standards and strict safety measures, it ensures efficient and reliable building infrastructure.",
+    },
+    {
+      name: "Ministry of Housing Project – MEP Maintenance & Installation",
+      description:
+        "Executed for Nahdat Al Emaar Company, this project involved comprehensive maintenance and installation of mechanical, electrical, and plumbing (MEP) systems. Work was completed with high-quality standards, ensuring efficient, safe, and fully functional building infrastructure.",
+      image: "../../public/assets/Images/Projects/nehda-saudi.png",
+      details:
+        "Completed for Nahdat Al Emaar Company, this project involved maintenance and installation of mechanical, electrical, and plumbing systems. All work was executed to high-quality standards, ensuring safe, efficient, and reliable building infrastructure.",
+    },
+    {
+      name: "Eastern Project – MEP Installation",
+      description:
+        "Executed for Kamco, this project involved the precise installation of mechanical, electrical, and plumbing (MEP) systems. Completed with high-quality standards and strict safety measures, it ensures efficient and reliable building operations.",
+      image: "../../public/assets/Images/Projects/Komko.jpg",
+      details:
+        "Completed for Kamco, this project involved the precise installation of mechanical, electrical, and plumbing systems. Work was carried out with high-quality standards and safety compliance, ensuring efficient and reliable building infrastructure.",
+    },
+    {
+      name: "Safari Co Ltd.",
+      description:
+        "These ongoing projects involve comprehensive maintenance and installation of mechanical, electrical, and plumbing (MEP) systems. All work is carried out with strict adherence to safety standards and high-quality practices, ensuring efficient, reliable, and fully operational building infrastructure.",
+      image: "../../public/assets/Images/Projects/Safari.jpg",
+      details:
+        "These ongoing projects involve comprehensive maintenance and installation of mechanical, electrical, and plumbing (MEP) systems. All work is carried out with strict adherence to safety standards and high-quality practices, ensuring efficient, reliable, and fully operational building infrastructure.",
+    },
+    {
+      name: "Ministry of Housing Project – MEP Maintenance & Installation",
+      description:
+        "Executed for Rayat Contracting Company, this project involves comprehensive maintenance and installation of mechanical, electrical, and plumbing (MEP) systems. All work is performed to high-quality standards, ensuring safe, efficient, and fully functional building infrastructure.",
+      image: "../../public/assets/Images/Projects/MoH.jpg",
+      details:
+        "Completed for Rayat Contracting Company, this project involves maintenance and installation of mechanical, electrical, and plumbing systems. All work is carried out to high-quality standards, ensuring safe, efficient, and reliable building infrastructure.",
+    },
     {
       name: "MSLC — Construction",
       description:
@@ -153,11 +203,11 @@ const data = {
 
 export default data;
 
-
 export const servicesData = [
   {
     category: "Project Management & End-to-End Solutions",
-    description: "Comprehensive project planning, execution, engineering, EPC, civil works, smart cities, industrial projects, and post-project support.",
+    description:
+      "Comprehensive project planning, execution, engineering, EPC, civil works, smart cities, industrial projects, and post-project support.",
     items: [
       "Project Management & Consultancy",
       "Comprehensive Project Planning & Execution",
@@ -193,7 +243,8 @@ export const servicesData = [
   },
   {
     category: "Manpower & HR Solutions",
-    description: "Workforce solutions including staffing, recruitment, HR management, training, and talent retention strategies.",
+    description:
+      "Workforce solutions including staffing, recruitment, HR management, training, and talent retention strategies.",
     items: [
       "Skilled & Semi-Skilled Manpower Supply",
       "Overseas Recruitment Services",
@@ -219,7 +270,8 @@ export const servicesData = [
   },
   {
     category: "Trade & Commerce Services",
-    description: "Global trading, import-export, logistics, and supply chain solutions across multiple commodities.",
+    description:
+      "Global trading, import-export, logistics, and supply chain solutions across multiple commodities.",
     items: [
       "Import & Export of Multiple Commodities",
       "Multi-Item Global Trading",
@@ -245,7 +297,8 @@ export const servicesData = [
   },
   {
     category: "Technology & IT Services",
-    description: "IT infrastructure, software, digital solutions, AI, IoT, cloud computing, and smart city technologies.",
+    description:
+      "IT infrastructure, software, digital solutions, AI, IoT, cloud computing, and smart city technologies.",
     items: [
       "IT Infrastructure Solutions",
       "Software Development & Support",
@@ -287,7 +340,8 @@ export const servicesData = [
   },
   {
     category: "Healthcare & Life Sciences Services",
-    description: "Medical equipment, hospital operations, telemedicine, clinical research, pharmaceuticals, and healthcare management.",
+    description:
+      "Medical equipment, hospital operations, telemedicine, clinical research, pharmaceuticals, and healthcare management.",
     items: [
       "Supply of Medical & Surgical Equipment",
       "Hospital Project Support & Operations",
@@ -313,7 +367,8 @@ export const servicesData = [
   },
   {
     category: "Energy & Sustainability Services",
-    description: "Oil, gas, renewable energy, smart grids, water treatment, environmental consultancy, and sustainability solutions.",
+    description:
+      "Oil, gas, renewable energy, smart grids, water treatment, environmental consultancy, and sustainability solutions.",
     items: [
       "Oil & Gas Services",
       "Power & Utility Solutions",
@@ -339,7 +394,8 @@ export const servicesData = [
   },
   {
     category: "Logistics & Transportation Services",
-    description: "Road, rail, air, maritime logistics, fleet management, warehousing, e-commerce fulfillment, and supply chain solutions.",
+    description:
+      "Road, rail, air, maritime logistics, fleet management, warehousing, e-commerce fulfillment, and supply chain solutions.",
     items: [
       "Road Transport Solutions",
       "Automobile Supply & Fleet Leasing",
@@ -365,7 +421,8 @@ export const servicesData = [
   },
   {
     category: "Facility & Operations Services",
-    description: "Facility management, security, fire safety, housekeeping, hospitality, and operational support for corporate and industrial sites.",
+    description:
+      "Facility management, security, fire safety, housekeeping, hospitality, and operational support for corporate and industrial sites.",
     items: [
       "Facility Management (AMC/CAMC)",
       "Security & Surveillance Systems",
@@ -391,7 +448,8 @@ export const servicesData = [
   },
   {
     category: "Consultancy, Education & Agro Services",
-    description: "Business, legal, investment, education, agro & livestock, R&D, training, and e-learning solutions.",
+    description:
+      "Business, legal, investment, education, agro & livestock, R&D, training, and e-learning solutions.",
     items: [
       "Business & Financial Advisory",
       "Investment & Partnership Support",

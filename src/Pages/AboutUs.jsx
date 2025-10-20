@@ -313,7 +313,7 @@ export default function About() {
             {
               name: "SYED ISHTIAQ UL HAQ",
               role: "System Analyst",
-              img: "../../public/assets/Images/Partners/ishtiaq-huq.jpg",
+              img: "../../public/assets/Images/Partners/ishtiaq.jpg",
             },
             // { name: "Michael Lee", role: "COO", img: "/assets/img/team-coo.jpg", desc: "Ensuring operational excellence and execution." },
           ].map((member, i) => (
@@ -343,7 +343,7 @@ export default function About() {
           <p className="text-gray-600 mb-12">Delivering measurable results and driving enterprise success worldwide.</p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: "Projects Completed", value: 300 },
+              { label: "Projects Completed", value: 100 },
               { label: "Global Clients", value: 500 },
               { label: "Countries", value: 20 },
               { label: "Team Members", value: 150 },
