@@ -2,7 +2,7 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6"; // New X icon
-import branches from "../Components/branches.js";
+import BranchesData from "../Components/BranchesData";
 
 
 
@@ -58,12 +58,12 @@ export default function Footer() {
 
         {/* Contact & Office Info */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">{branches.headOffice.branchName}</h3>
-          <p className="text-sm">{branches.headOffice.address}</p>
-          <p className="mt-2 text-sm">📞 India : {branches.headOffice.phone}</p>
-          <p className="mt-2 text-sm">📧 {branches.headOffice.email}</p>
-          <p className="mt-3 text-sm">🕒 Mon - Sat: {branches.headOffice.workingHours.mondayToFriday}</p>
-          <p className="text-sm">🕒 Sunday: {branches.headOffice.workingHours.sunday}</p>
+          <h3 className="text-lg font-semibold text-white mb-4">{BranchesData.headOffice.branchName}</h3>
+          <p className="text-sm">{BranchesData.headOffice.address}</p>
+          <p className="mt-2 text-sm">📞 India : {BranchesData.headOffice.phone}</p>
+          <p className="mt-2 text-sm">📧 {BranchesData.headOffice.email}</p>
+          <p className="mt-3 text-sm">🕒 Mon - Sat: {BranchesData.headOffice.workingHours.mondayToFriday}</p>
+          <p className="text-sm">🕒 Sunday: {BranchesData.headOffice.workingHours.sunday}</p>
         </div>
 
         {/* Newsletter / Social */}
@@ -84,7 +84,7 @@ export default function Footer() {
 
           <div className="flex items-center space-x-4 mt-4">
             <a
-              href={branches.headOffice.socialMedia.facebook}
+              href={BranchesData.headOffice.socialMedia.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/20 p-2 rounded-full hover:bg-blue-500 transition"
@@ -92,7 +92,7 @@ export default function Footer() {
               <FaFacebookF size={20} />
             </a>
             <a
-              href={branches.headOffice.socialMedia.twitter}
+              href={BranchesData.headOffice.socialMedia.twitter}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/20 p-2 rounded-full hover:bg-black transition"
@@ -100,7 +100,7 @@ export default function Footer() {
               <FaXTwitter size={20} />
             </a>
             <a
-              href={branches.headOffice.socialMedia.linkedin}
+              href={BranchesData.headOffice.socialMedia.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/20 p-2 rounded-full hover:bg-blue-400 transition"
@@ -108,7 +108,7 @@ export default function Footer() {
               <FaLinkedinIn size={20} />
             </a>
             <a
-              href={branches.headOffice.socialMedia.instagram}
+              href={BranchesData.headOffice.socialMedia.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/20 p-2 rounded-full hover:bg-pink-500 transition"

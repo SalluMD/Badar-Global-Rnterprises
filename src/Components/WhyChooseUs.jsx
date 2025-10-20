@@ -4,17 +4,18 @@ import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
   const reasons = [
+
     {
       icon: <Award className="w-12 h-12 text-[#006881]" />,
-      title: "Trusted Expertise",
+      title: "Credibility",
       description:
-        "Our team consists of certified professionals with a proven record of delivering scalable enterprise solutions.",
+        "Trusted by 500+ clients worldwide, BG stands as a proven name in reliability, performance, and excellence across diverse industries.",
     },
     {
       icon: <TrendingUp className="w-12 h-12 text-[#006881]" />,
-      title: "Business Growth",
+      title: "Scale",
       description:
-        "We don’t just provide services — we enable your business to grow, adapt, and outperform the competition.",
+        "With a presence across multiple continents, we possess the capability and infrastructure to handle projects of any size or complexity—from local initiatives to global ventures.",
     },
     {
       icon: <Headphones className="w-12 h-12 text-[#006881]" />,
@@ -24,21 +25,21 @@ export default function WhyChooseUs() {
     },
     {
       icon: <CheckCircle2 className="w-12 h-12 text-[#006881]" />,
-      title: "Quality First",
+      title: "Expertise",
       description:
-        "Every solution passes through rigorous testing and QA processes to ensure top-notch performance.",
-    },
-    {
-      icon: <Globe className="w-12 h-12 text-[#006881]" />,
-      title: "Global Reach",
-      description:
-        "We work with clients across multiple industries and continents, adapting solutions to diverse market needs.",
+        "Our team of multi-disciplinary professionals combines technical know-how, industry experience, and innovation to ensure world-class quality in every project.",
     },
     {
       icon: <Shield className="w-12 h-12 text-[#006881]" />,
-      title: "Security Focused",
+      title: "Commitment",
       description:
-        "Your data and business processes are protected with industry-leading security practices and compliance standards.",
+        "We dedicate our time, resources, and creativity to achieving each client’s goals—delivering solutions that are efficient, cost-effective, and result-driven.",
+    },
+    {
+      icon: <Globe className="w-12 h-12 text-[#006881]" />,
+      title: "Global Vision",
+      description:
+        "By merging international expertise with localized execution, BG delivers customized strategies that meet regional needs while maintaining global standards.}",
     },
   ];
 
@@ -64,11 +65,13 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-lg text-gray-600 mb-14 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg text-gray-600 mb-14 max-w-6xl mx-auto leading-relaxed"
         >
           Partnering with us means choosing a team committed to your success.
-          We combine innovation, expertise, and customer-first values to build
-          solutions that truly make a difference.
+          At Badar Global Enterprises Pvt. Ltd. (BG), we go beyond delivering services —
+          we build lasting partnerships that drive measurable success. By combining innovation, expertise,
+          and a customer-first approach, we create solutions that truly make a difference.
+          That’s why global organizations trust us as their preferred business partner.
         </motion.p>
 
         {/* Cards Grid */}

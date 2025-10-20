@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import Hero from "../Components/Hero";
-import { MapPin, Phone, Mail } from "lucide-react";
-import { FaCheckCircle, FaShieldAlt, FaLightbulb, FaUsers, FaHeart, FaChartLine } from "react-icons/fa";
-import branches from "../Components/branches.js";
+import { FaCheckCircle, FaShieldAlt, FaLightbulb, FaUsers, FaHeart, FaChartLine, FaFacebook, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import Branches from "../Components/Branches.jsx";
+import BranchesData from '../Components/BranchesData.js'
 
 // Animation variants
 const fadeUp = {
@@ -122,13 +122,13 @@ export default function ContactUs() {
                   key={i}
                   {...staggerItem}
                   {...cardHover}
-                  className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-200 hover:border-indigo-300 transition-all duration-300 group"
+                  className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-200 hover:border-[#6f1f34] transition-all duration-300 group"
                 >
                   <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-indigo-700 transition-colors">
+                    <div className="w-16 h-16 bg-[#006881] text-white rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-[#6f1f34] transition-colors">
                       <Icon size={28} />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">{commitment.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{commitment.description}</p>
@@ -140,87 +140,47 @@ export default function ContactUs() {
       </section>
 
       {/* Contact Info */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#006881]">
         <motion.div {...fadeUp} className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
             Our Branches
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          <p className="text-gray-50 max-w-3xl mx-auto text-lg leading-relaxed">
             Connect with us at any of our global offices. We're ready to assist you wherever you are.
           </p>
+          <Branches />
         </motion.div>
-
-        <div className="max-w-7xl mx-auto space-y-12">
-          {Object.entries(branches).map(([key, branch], i) => (
-            <motion.div
-              key={i}
-              {...fadeUp}
-              {...cardHover}
-              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:border-indigo-200 transition-all duration-300"
-            >
-              <h3 className="text-2xl font-semibold text-center text-indigo-700 mb-6">
-                {branch.country} - {branch.city} ({branch.branchName || (key === "headOffice" ? "Head Office" : "Branch Office")})
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                {/* Info */}
-                <div className="space-y-4">
-                  <p className="flex items-center text-gray-700">
-                    <MapPin className="w-5 h-5 text-indigo-600 mr-2" />
-                    <span><strong>Address:</strong> {branch.address}</span>
-                  </p>
-                  <a href={`tel:${branch.phone}`} className="flex items-center text-gray-700 hover:text-indigo-600 transition">
-                    <Phone className="w-5 h-5 text-indigo-600 mr-2" />
-                    <span><strong>Phone:</strong> {branch.phone}</span>
-                  </a>
-                  <a href={`mailto:${branch.email}`} className="flex items-center text-gray-700 hover:text-indigo-600 transition">
-                    <Mail className="w-5 h-5 text-indigo-600 mr-2" />
-                    <span><strong>Email:</strong> {branch.email}</span>
-                  </a>
-                </div>
-                {/* Map */}
-                <iframe
-                  src={branch.mapEmbedUrl}
-                  width="100%"
-                  height="300"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  className="rounded-xl shadow-md"
-                  title={`${branch.city} Map`}
-                />
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </section>
 
-      {/* How to Reach Us */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <motion.div {...fadeUp} className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            How to Reach Us
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-            Visit us at any of our offices, easily accessible with ample parking and public transport options.
-          </p>
-        </motion.div>
+      {/* How to Reach Us Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div {...fadeUp} className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+              How to Reach Us
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+              Find our offices across India and Saudi Arabia. Select a branch to view its map and contact details.
+            </p>
+          </motion.div>
 
-        <div className="max-w-7xl mx-auto">
+          {/* Branch Selection Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {Object.entries(branches).map(([key, branch]) => (
+            {Object.entries(BranchesData).slice(1).map(([key, branch]) => (
               <button
                 key={key}
                 onClick={() => setSelectedBranch(key)}
-                className={`px-6 py-3 rounded-full font-semibold transition ${
-                  selectedBranch === key
-                    ? "bg-indigo-600 text-white"
+                className={`px-6 py-3 rounded-full font-semibold transition ${selectedBranch === key
+                    ? "bg-[#006881] text-white"
                     : "bg-gray-200 text-gray-700 hover:bg-indigo-100 hover:text-indigo-700"
-                }`}
+                  }`}
               >
                 {branch.city}
               </button>
             ))}
           </div>
+
+          {/* Branch Map + Details */}
           <AnimatePresence>
             <motion.div
               key={selectedBranch}
@@ -230,38 +190,49 @@ export default function ContactUs() {
               transition={{ duration: 0.3 }}
               className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto"
             >
+              {/* Map */}
               <div className="md:w-1/2">
                 <iframe
                   className="w-full h-96 rounded-2xl shadow-lg"
-                  src={branches[selectedBranch].mapEmbedUrl}
+                  src={BranchesData[selectedBranch].mapEmbedUrl}
                   allowFullScreen
                   loading="lazy"
-                  title={`${branches[selectedBranch].city} Map`}
+                  title={`${BranchesData[selectedBranch].city} Map`}
                 />
               </div>
-              <div className="md:w-1/2 text-gray-700 text-lg leading-relaxed">
-                <p>
-                  Our {branches[selectedBranch].city} office is strategically located for easy access via public transport and is just a short distance from the city center. Ample parking is available for visitors, ensuring a hassle-free experience.
-                </p>
-                <p className="mt-4">
-                  <strong>Address:</strong> {branches[selectedBranch].address}
-                </p>
-                <p className="mt-2">
-                  <strong>Nearest Transport:</strong>{" "}
-                  {branches[selectedBranch].city === "Hyderabad"
-                    ? "Hyderabad Metro (10 min walk)"
-                    : branches[selectedBranch].city === "Riyadh"
-                    ? "Riyadh Metro (15 min walk)"
-                    : "Dammam Bus Station (5 min drive)"}
-                </p>
+
+              {/* Info */}
+              <div className="md:w-1/2 text-left text-gray-700 text-lg leading-relaxed space-y-4">
+                <h3 className="text-2xl font-bold text-[#006881]">
+                  {BranchesData[selectedBranch].branchName} ({BranchesData[selectedBranch].country})
+                </h3>
+                <p><strong>Address:</strong> {BranchesData[selectedBranch].address}</p>
+                <p><strong>Phone:</strong> {BranchesData[selectedBranch].phone}</p>
+                <p><strong>Email:</strong> {BranchesData[selectedBranch].email}</p>
+                
+                <div className="flex gap-4 mt-4">
+                  <a href={BranchesData[selectedBranch].socialMedia.facebook} target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="text-gray-600 hover:text-[#006881] text-xl transition" />
+                  </a>
+                  <a href={BranchesData[selectedBranch].socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn className="text-gray-600 hover:text-[#006881] text-xl transition" />
+                  </a>
+                  <a href={BranchesData[selectedBranch].socialMedia.instagram} target="_blank" rel="noopener noreferrer">
+                    <FaInstagram className="text-gray-600 hover:text-[#006881] text-xl transition" />
+                  </a>
+                  <a href={BranchesData[selectedBranch].socialMedia.twitter} target="_blank" rel="noopener noreferrer">
+                    <FaTwitter className="text-gray-600 hover:text-[#006881] text-xl transition" />
+                  </a>
+                </div>
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
       </section>
 
+
       {/* Contact Form */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-900 via-indigo-800 to-purple-900 text-white">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#006881] text-white">
         <motion.div {...fadeUp} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
             Send Us a Message
@@ -333,7 +304,7 @@ export default function ContactUs() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1"
+              className="bg-[#006881] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1"
             >
               🚀 Send Message
             </button>

@@ -4,6 +4,7 @@ import { FaArrowLeft, FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import Hero from "../Components/Hero";
 import CTA from "../Components/CTA";
 import Data from "../Components/Data.js";
+import { useNavigate } from "react-router-dom";
 
 // Animation variants
 const fadeUp = {
@@ -26,6 +27,8 @@ const modalVariants = {
 
 export default function ProjectsSection() {
   const [currentIndex, setCurrentIndex] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleClose = () => setCurrentIndex(null);
   const handlePrev = () =>
@@ -84,7 +87,7 @@ export default function ProjectsSection() {
                   alt={project.name}
                   className="rounded-2xl shadow-xl w-full object-cover h-80 hover:scale-105 transition-transform duration-500"
                 />
-                <span className="absolute top-4 left-4 bg-indigo-600 text-white text-sm font-medium px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 bg-[#006881] text-white text-sm font-medium px-3 py-1 rounded-full">
                   {project.category || "Project"}
                 </span>
               </div>
@@ -98,7 +101,7 @@ export default function ProjectsSection() {
                   {project.description}
                 </p>
                 <button
-                  className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors"
+                  className="text-[#006881] font-semibold hover:text-[#6f1f34] transition-colors"
                   onClick={() => setCurrentIndex(i)}
                 >
                   Discover More →
@@ -120,7 +123,7 @@ export default function ProjectsSection() {
             >
               <motion.div
                 {...modalVariants}
-                className="bg-white rounded-2xl max-w-4xl w-full relative shadow-2xl max-h-[90vh] overflow-y-auto"
+                className="bg-white rounded-2xl max-w-4xl w-full relative shadow-2xl max-h-[90vh] overflow-y-auto scrollbar-none"
               >
                 {/* Close button */}
                 <button
@@ -151,7 +154,7 @@ export default function ProjectsSection() {
                     className="w-full h-96 object-cover rounded-t-2xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <span className="absolute top-4 left-4 bg-indigo-600 text-white text-sm font-medium px-3 py-1 rounded-full">
+                  <span className="absolute top-4 left-4 bg-[#006881] text-white text-sm font-medium px-3 py-1 rounded-full">
                     {Data.projects[currentIndex].category || "Project"}
                   </span>
                 </div>
@@ -179,8 +182,8 @@ export default function ProjectsSection() {
                     </div>
                   )}
                   <button
-                    className="mt-6 bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors"
-                    onClick={handleClose}
+                    className="mt-6 bg-[#006881] text-white px-6 py-3 rounded-lg hover:bg-[#6f1f34] cursor-pointer transition-colors"
+                    onClick={() => navigate("/contact")}
                   >
                     Get in Touch
                   </button>
@@ -190,13 +193,13 @@ export default function ProjectsSection() {
                 <div className="flex justify-between items-center px-6 pb-6">
                   <button
                     onClick={handlePrev}
-                    className="flex items-center gap-2 text-indigo-600 font-semibold hover:text-indigo-800 transition-colors"
+                    className="flex items-center gap-2 text-[#006881] font-semibold hover:text-[#6f1f34] cursor-pointer transition-colors"
                   >
                     <FaArrowLeft /> Previous
                   </button>
                   <button
                     onClick={handleNext}
-                    className="flex items-center gap-2 text-indigo-600 font-semibold hover:text-indigo-800 transition-colors"
+                    className="flex items-center gap-2 text-[#006881] font-semibold hover:text-[#6f1f34] cursor-pointer transition-colors"
                   >
                     Next <FaArrowRight />
                   </button>

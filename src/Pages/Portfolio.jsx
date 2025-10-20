@@ -42,7 +42,7 @@ export default function FounderPortfolio() {
       <section className="relative bg-gradient-to-r from-[#006881] to-[#006881] text-white py-20">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
           <img
-            src="../../public/assets/Images/Profile/2.jpg"
+            src="../../public/assets/Images/Profile/PP.jpg"
             alt="Founder"
             className="w-48 h-48 rounded-full shadow-lg border-4 border-white object-cover"
           />
@@ -51,14 +51,14 @@ export default function FounderPortfolio() {
             <p className="text-xl mt-2">Founder & Executive Director, BGE Pvt. Ltd.</p>
             <div className="flex justify-center md:justify-start gap-4 mt-4">
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/share/16NV5Uw76e/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 p-3 rounded-full hover:bg-blue-500 transition"
               >
                 <FaFacebookF size={16} />
               </a>
-              <a href="https:// linkedin.com/"
+              <a href="https://www.linkedin.com/in/mohammed-arif-08b39916a"
 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export default function FounderPortfolio() {
               >
                 <FaLinkedinIn size={16}/>
               </a>
-              <a href="https://x.com/"
+              <a href="https://x.com/arifmohamm92527"
 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -180,7 +180,7 @@ export default function FounderPortfolio() {
               className="relative rounded-lg overflow-hidden shadow-md cursor-pointer group"
             >
               <img
-                src="../../public/assets/Images/Profile/vi.jpg"
+                src="../../public/assets/Images/Profile/8.jpg"
                 alt="Team work"
                 className="w-full group-hover:scale-105 transition duration-300"
               />

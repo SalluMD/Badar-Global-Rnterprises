@@ -2,7 +2,7 @@ import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6"; // New X icon
-import branches from "../Components/branches.js";
+import BranchesData from "../Components/BranchesData.js";
 
 export default function Tooltip() {
   return (
@@ -15,12 +15,12 @@ export default function Tooltip() {
             <MapPin size={12} />
           </div>
           <a
-            href="https://www.google.com/maps/place/Salarjung+Colony,+Rethibowli,+Hyderabad,+Telangana+-+500008"
+            href={BranchesData.headOffice.mapEmbedUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs md:text-sm"
           >
-            {branches.headOffice.address}
+            {BranchesData.headOffice.address}
           </a>
         </div>
 
@@ -29,8 +29,8 @@ export default function Tooltip() {
           <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition">
             <Mail size={12} />
           </div>
-          <a href={branches.headOffice.email} className="text-xs md:text-sm">
-            {branches.headOffice.email}
+          <a href={`mailto:${BranchesData.headOffice.email}`} className="text-xs md:text-sm">
+            {BranchesData.headOffice.email}
           </a>
         </div>
 
@@ -39,15 +39,15 @@ export default function Tooltip() {
           <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition">
             <Phone size={12} />
           </div>
-          <a href={`tel:${branches.headOffice.phone}`} className="text-xs md:text-sm">
-            {branches.headOffice.phone}
+          <a href={`tel:${BranchesData.headOffice.phone}`} className="text-xs md:text-sm">
+            {BranchesData.headOffice.phone}
           </a>
         </div>
 
         {/* Social Media */}
         <div className="flex items-center gap-2">
           <a
-            href={branches.headOffice.socialMedia.facebook}
+            href={BranchesData.headOffice.socialMedia.facebook}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/20 p-2 rounded-full hover:bg-blue-500 transition"
@@ -55,7 +55,7 @@ export default function Tooltip() {
             <FaFacebookF size={12} />
           </a>
           <a
-            href={branches.headOffice.socialMedia.twitter}
+            href={BranchesData.headOffice.socialMedia.twitter}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/20 p-2 rounded-full hover:bg-black transition"
@@ -63,7 +63,7 @@ export default function Tooltip() {
             <FaXTwitter size={12} />
           </a>
           <a
-            href={branches.headOffice.socialMedia.linkedin}
+            href={BranchesData.headOffice.socialMedia.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/20 p-2 rounded-full hover:bg-blue-400 transition"
@@ -71,7 +71,7 @@ export default function Tooltip() {
             <FaLinkedinIn size={12} />
           </a>
           <a
-            href={branches.headOffice.socialMedia.instagram}
+            href={BranchesData.headOffice.socialMedia.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/20 p-2 rounded-full hover:bg-pink-500 transition"

@@ -1,4 +1,4 @@
-const branches = {
+const BranchesData = {
   headOffice: {
     branchName: "Head Office",
     country: "India",
@@ -11,16 +11,15 @@ const branches = {
     services: ["Corporate Management", "Business Development", "Customer Support"],
     languagesSpoken: ["English", "Hindi", "Telugu"],
     socialMedia: {
-      facebook: "https://www.facebook.com/badarglobalenterprises",
-      twitter: "https://twitter.com/BadarGlobal",
-      linkedin: "https://www.linkedin.com/company/badar-global-enterprises",
-      instagram: "https://www.instagram.com/badarglobalenterprises/",
+      facebook: "https://www.facebook.com/BadarGlobal",
+      twitter: "https://x.com/badarglobal",
+      linkedin: "https://www.linkedin.com/in/badar-global-90429438b/",
+      instagram: "https://www.instagram.com/badarglobalenterprises",
     },
-    mapEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.632648634509!2d78.40152931485354!3d17.3616149880998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93b0e6f5e6b7%3A0x7d4a5c6e4c6e4c6e!2sBadar%20Global%20Enterprises!5e0!3m2!1sen!2sin!4v1697051234567!5m2!1sen!2sin",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3658.6267201701066!2d78.4225833!3d17.394916699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIzJzQxLjciTiA3OMKwMjUnMjEuMyJF!5e1!3m2!1sen!2sin!4v1760822586225!5m2!1sen!2sin",
     workingHours: {
-      mondayToFriday: "10:00 AM - 7:00 PM",
-      saturday: "10:00 AM - 4:00 PM",
+      mondayToFriday: "9:00 AM - 5:00 PM",
+      saturday: "9:00 AM - 5:00 PM",
       sunday: "Closed",
     },
   },
@@ -33,20 +32,19 @@ const branches = {
     phone: "+91 9989732288",
     whatsapp: "+91 9989732288",
     fax: "+91 40 87654321",
-    email: "india@badarglobal.com",
+    email: "info@badarglobal.com",
     services: ["Sales", "Logistics", "Support"],
     languagesSpoken: ["English", "Hindi", "Telugu"],
     socialMedia: {
-      facebook: "https://www.facebook.com/badarglobalenterprises",
-      twitter: "https://twitter.com/BadarGlobal",
-      linkedin: "https://www.linkedin.com/company/badar-global-enterprises",
-      instagram: "https://www.instagram.com/badarglobalenterprises/",
+    facebook: "https://www.facebook.com/BadarGlobal",
+      twitter: "https://x.com/badarglobal",
+      linkedin: "https://www.linkedin.com/in/badar-global-90429438b/",
+      instagram: "https://www.instagram.com/badarglobalenterprises",
     },
-    mapEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.632648634509!2d78.40152931485354!3d17.3616149880998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93b0e6f5e6b7%3A0x7d4a5c6e4c6e4c6e!2sBadar%20Global%20Enterprises!5e0!3m2!1sen!2sin!4v1697051234567!5m2!1sen!2sin",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3658.6267201701066!2d78.4225833!3d17.394916699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIzJzQxLjciTiA3OMKwMjUnMjEuMyJF!5e1!3m2!1sen!2sin!4v1760822586225!5m2!1sen!2sin",
     workingHours: {
-      mondayToFriday: "10:00 AM - 7:00 PM",
-      saturday: "10:00 AM - 4:00 PM",
+      mondayToFriday: "9:00 AM - 5:00 PM",
+      saturday: "9:00 AM - 5:00 PM",
       sunday: "Closed",
     },
   },
@@ -55,7 +53,7 @@ const branches = {
     branchName: "Riyadh Branch",
     country: "SAUDI ARABIA",
     city: "Riyadh",
-    address: "King Fahd Road, Riyadh, Saudi Arabia",
+    address: "Prince Abdulaziz Ibn Musaid Ibn Jalawi St, Al Murabba, Riyadh 12612, Saudi Arabia",
     phone: "+966 530709823",
     whatsapp: "+966 530709823",
     fax: "+966 11 1234567",
@@ -68,9 +66,9 @@ const branches = {
       linkedin: "https://www.linkedin.com/company/badar-global-enterprises",
       instagram: "https://www.instagram.com/badarglobalenterprises/",
     },
-    mapEmbedUrl: "https://www.google.com/maps/embed?... (Riyadh map URL)",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.853938465855!2d46.7030603!3d24.676226900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0453f2473895%3A0xefd1c10ee4ae1720!2sPrince%20Abdulaziz%20Ibn%20Musaid%20Ibn%20Jalawi%20St%2C%20Riyadh%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1760822671400!5m2!1sen!2sin",
     workingHours: {
-      sundayToThursday: "9:00 AM - 6:00 PM",
+      sundayToThursday: "8:00 AM - 5:00 PM",
       friday: "Closed",
       saturday: "Closed",
     },
@@ -93,13 +91,13 @@ const branches = {
       linkedin: "https://www.linkedin.com/company/badar-global-enterprises",
       instagram: "https://www.instagram.com/badarglobalenterprises/",
     },
-    mapEmbedUrl: "https://www.google.com/maps/embed?... (Dammam map URL)",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3435.3895514537844!2d49.9608333!3d26.3575833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDIxJzI3LjMiTiA0OcKwNTcnMzkuMCJF!5e1!3m2!1sen!2sin!4v1760822747752!5m2!1sen!2sin",
     workingHours: {
-      sundayToThursday: "9:00 AM - 6:00 PM",
+      sundayToThursday: "8:00 AM - 5:00 PM",
       friday: "Closed",
       saturday: "Closed",
     },
   },
 };
 
-export default branches;
+export default BranchesData;

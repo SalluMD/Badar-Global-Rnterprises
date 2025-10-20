@@ -17,65 +17,105 @@ export default function WhoWeAre() {
 
             {/* Company Intro */}
             <section className="py-20 bg-gray-50">
-  <motion.div
-    className="max-w-5xl mx-auto px-6 text-center"
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-  >
-    <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-      We Are{" "}
-      <span className="text-[#006881] underline decoration-4 underline-offset-4">
-        Badar Global Enterprise
-      </span>{" "}
-      Private Limited
-    </h2>
+                <motion.div
+                    className="max-w-5xl mx-auto px-6 text-center"
+                    variants={fadeUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                        We Are{" "}
+                        <span className="text-[#006881] underline decoration-4 underline-offset-4">
+                            Badar Global Enterprise
+                        </span>{" "}
+                        Private Limited
+                    </h2>
+                    <h5 className="text-2xl md:text-xl font-extrabold text-gray-900 mb-6 leading-tight">
+                        “Delivering Multi-Sector Excellence with Integrity, Innovation & Impact.”
+                    </h5>
 
-    <div className="space-y-6 text-left md:text-justify text-gray-600 text-lg leading-relaxed">
-      <p>
-        Established in <strong>2005</strong> by founder{" "}
-        <strong>Mohammed Arif</strong>, <strong>BADAR Global Enterprises Private Limited</strong> has
-        grown into a dynamic and multifaceted organization, delivering comprehensive business solutions
-        across diverse industries.
-      </p>
+                    <section className="relative py-16 px-6 md:px-12 lg:px-2 overflow-hidden">
+                        <motion.div
+                            className="relative max-w-6xl mx-auto space-y-10 text-gray-600"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="space-y-6 text-left md:text-justify text-lg leading-relaxed">
+                                <p>
+                                    Founded in <strong>2005</strong> by{" "}
+                                    <strong>Mr. Mohammed Arif, Badar Global Enterprises Pvt. Ltd.</strong>{" "}
+                                    (BGE) has evolved into a globally trusted, multi-sector organization delivering excellence across
+                                    <span className="font-semibold text-[#006881]"> 25+ industries</span>.
+                                    With over <strong>500+</strong> satisfied clients — including government,
+                                    semi-government, multinational, and private enterprises — BGE stands as a
+                                    symbol of <strong>trust, performance, and innovation.</strong>
+                                </p>
 
-      <p>
-        Specializing in{" "}
-        <span className="font-medium text-gray-800">
-          project management, manpower supply, import/export operations, information technology, building materials,
-          landscaping and construction, multi-item trading, healthcare and surgical sectors, facility management,
-          logistics and transportation, and tour and travel services
-        </span>
-        , the company serves as a trusted partner for organizations seeking efficiency and growth.
-      </p>
+                                <p>
+                                    <strong className="text-[#006881]">BG is not just a business group — we are a strategic partner</strong> committed to delivering
+                                    <strong> high-quality, customized solutions </strong> tailored to each client’s unique needs.
+                                    Since our inception, our focus has remained clear and consistent:
+                                </p>
 
-      <p>
-        With a commitment to innovation, quality, and client-centric strategies, BADAR Global ensures seamless execution
-        from inception to completion, leveraging global networks and cutting-edge tools to meet both local and
-        international market demands.
-      </p>
+                                <ul className="space-y-3 pl-6 list-disc marker:text-[#006881]">
+                                    <li>
+                                        <span className="font-semibold">Integrity in Execution – </span>Delivering what we promise, every time.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Innovation in Approach – </span>Leveraging cutting-edge technology and global best practices.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Impact in Results – </span>Creating measurable, sustainable value for our clients.
+                                    </li>
+                                </ul>
 
-      <p>
-        Under <strong>Mohammed Arif’s</strong> visionary leadership, BADAR Global emphasizes reliability, sustainability,
-        and value-driven outcomes, enabling businesses to navigate complex challenges without compromising timelines or
-        budgets.
-      </p>
+                                <p>
+                                    We specialize in a diverse portfolio of services including{" "}
+                                    <span className="font-medium text-gray-600">
+                                        project management, manpower supply, import & export operations, information technology,
+                                        building materials, landscaping & construction, multi-item trading, healthcare & surgical supplies,
+                                        facility management, logistics & transportation, and tour & travel solutions.
+                                    </span>{" "}
+                                    The company serves as a trusted partner for organizations seeking efficiency and growth.
+                                </p>
 
-      <p>
-        From supplying skilled professionals for short-term projects to streamlining cross-border trade with compliant
-        logistics, or providing end-to-end IT and facility maintenance support, the company fosters long-term
-        partnerships built on trust and transparency.
-      </p>
+                                <p>
+                                    At Badar Global, we believe in <strong>seamless execution from concept to completion</strong>.
+                                    Our team combines expertise, advanced technology, and strategic insight to craft
+                                    tailored solutions that empower businesses toward <strong>sustainable growth</strong> and operational excellence.
+                                </p>
 
-      <p>
-        By integrating eco-friendly practices in construction and landscaping while prioritizing safety in healthcare
-        equipment and travel services, BADAR Global drives operational excellence and contributes to economic
-        development, empowering clients to thrive in an ever-evolving global landscape.
-      </p>
-    </div>
-  </motion.div>
-</section>
+                                <p>
+                                    Under the visionary leadership of{" "}
+                                    <span className="font-medium text-[#006881]">Mr. Mohammed Arif</span>, BG champions
+                                    reliability, sustainability, and client-centric values — going beyond service delivery
+                                    to build <strong>long-term partnerships</strong> founded on trust, transparency, and measurable success.
+                                </p>
+
+                                <p>
+                                    Whether it’s supplying skilled professionals, streamlining global trade, or delivering
+                                    end-to-end IT and facility maintenance solutions, BG ensures <strong>efficiency</strong> without
+                                    compromising <strong>timelines or budgets.</strong>
+                                </p>
+
+                                <p>
+                                    Our commitment to <strong>eco-friendly practices, safety, and innovation</strong> drives
+                                    everything we do — from sustainable construction and landscaping to healthcare
+                                    and travel management — contributing to <strong>economic progress</strong> and a better future.
+                                </p>
+
+                                <p className="text-gray-600 font-medium italic text-center md:text-left">
+                                    At Badar Global Enterprises, we don’t just provide services —
+                                    <span className="text-[#006881] font-semibold"> we deliver solutions that move businesses forward.</span>
+                                </p>
+                            </div>
+                        </motion.div>
+                    </section>
+                </motion.div>
+            </section>
 
 
             {/* Leadership Section */}

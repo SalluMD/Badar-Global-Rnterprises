@@ -1,9 +1,11 @@
 import { Fragment, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, X, CheckCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, X, CheckCircle } from "lucide-react";
 import Hero from "../Components/Hero";
 import CTA from "../Components/CTA";
 import Data from "../Components/Data.js";
+import { Navigate, useNavigate } from "react-router-dom";
+import { servicesData } from "../Components/Data.js";
 
 // Animation variants
 const fadeUp = {
@@ -26,6 +28,8 @@ const modalVariants = {
 
 export default function Services() {
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [openAccordion, setOpenAccordion] = useState(null);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setSelectedIndex((prev) => (prev + 1) % Data.services.length);
@@ -55,15 +59,23 @@ export default function Services() {
         backgroundImage="./../../public/assets/Images/new-data-services-Ar-iTL4QKl4-unsplash.jpg"
         className="bg-gradient-to-b from-gray-900/80 to-transparent"
       />
-      <section className="py-32 bg-gray-50">
+      <section className="pt-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <motion.div {...fadeUp} className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
               Our Services
             </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore our comprehensive suite of services designed to meet your unique business challenges with cutting-edge solutions.
+            <p className="text-gray-700 text-justify mb-4 mt-12">
+              <strong>Badar Global Enterprises Pvt. Ltd. (BG)</strong> delivers over <strong>250 high-impact, multi-sector services</strong> globally. We specialize in providing solutions that are tailored, innovative, and of the highest quality, designed to meet the unique requirements of each client.
+            </p>
+
+            <p className="text-gray-700 text-justify mb-4">
+              Our expertise spans a wide array of industries, including <strong>Project Management, Infrastructure, IT, Healthcare, Energy, Logistics, Consultancy, Education, and Agro & Livestock</strong>. By combining deep sector knowledge with cutting-edge technology, we ensure solutions that drive tangible results.
+            </p>
+
+            <p className="text-gray-700 text-justify">
+              At BG, we are committed to excellence and innovation. Every project we undertake is client-focused, ensuring scalable, sustainable, and high-quality outcomes that consistently exceed expectations across international markets.
             </p>
           </motion.div>
 
@@ -94,7 +106,7 @@ export default function Services() {
                     {service.description}
                   </p>
                   <button
-                    className="mt-4 text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
+                    className="mt-4 text-[#006881] font-medium hover:text-[#6f1f34] transition-colors"
                     onClick={() => setSelectedIndex(i)}
                   >
                     Learn More
@@ -117,7 +129,7 @@ export default function Services() {
             >
               <motion.div
                 {...modalVariants}
-                className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden relative max-h-[90vh] overflow-y-auto"
+                className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden relative max-h-[90vh] overflow-y-auto scrollbar-none"
               >
                 {/* Close Button */}
                 <button
@@ -163,8 +175,8 @@ export default function Services() {
                     </div>
                   )}
                   <button
-                    className="mt-6 bg-[#006881] text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors"
-                    onClick={() => setSelectedIndex(null)}
+                    className="mt-6 bg-[#006881] text-white px-6 py-3 rounded-lg hover:bg-[#6f1f34] transition-colors"
+                    onClick={() => navigate("/contact")}
                   >
                     Get Started
                   </button>
@@ -191,6 +203,60 @@ export default function Services() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Accordion */}
+        <section className="bg-gray-50 py-20">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              Services & Solutions – 250+ Global Offerings
+            </h2>
+
+            {servicesData.map((service, index) => (
+              <div key={index} className="mb-6 bg-white rounded-3xl shadow-lg overflow-hidden">
+
+                <button
+                  onClick={() => setOpenAccordion(openAccordion === index ? null : index)}
+                  className="w-full flex justify-between items-center p-6 focus:outline-none rounded-t-3xl transition-colors duration-300 hover:bg-[#006881] hover:text-white cursor-pointer"
+                >
+                  {/* Left: Category & Description */}
+                  <div className="text-left">
+                    <h3 className="text-xl font-semibold">{service.category}</h3>
+                    <p className="mt-1">{service.description}</p>
+                  </div>
+
+                  {/* Right: Icon */}
+                  <div className="flex-shrink-0 ml-4">
+                    {openAccordion === index ? (
+                      <ChevronUp className="w-6 h-6" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6" />
+                    )}
+                  </div>
+                </button>
+
+                {openAccordion === index && (
+                  <ul className="px-6 pb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                    {service.items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="text-gray-700 text-sm bg-gray-100 rounded-lg p-2 cursor-pointer hover:bg-gray-200"
+                        onClick={() =>
+                          setSelectedIndex(
+                            allServices.findIndex(
+                              (s) => s.title === item && s.category === service.category
+                            )
+                          )
+                        }
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
       <CTA />
     </Fragment>

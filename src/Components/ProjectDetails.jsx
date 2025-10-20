@@ -68,6 +68,14 @@ export default function ProjectDetails() {
 
   const projects = [
     {
+      title: "MSLC — Construction",
+      desc:
+        "Major civil construction project under MSLC, delivering durable and high-quality structures with innovative engineering.",
+      icon: Hammer,
+      details:
+        "MSLC construction project includes industrial, residential, and infrastructure works. We incorporate modern design with advanced safety and quality standards.",
+    },
+    {
       title: "Lifestyle — Maintenance",
       desc:
         "Providing complete maintenance services ensuring seamless operations, long-term sustainability, and customer satisfaction for Lifestyle projects.",
@@ -75,21 +83,13 @@ export default function ProjectDetails() {
       details:
         "Our Lifestyle maintenance project covers electrical, mechanical, and civil maintenance services. With a dedicated team, we ensure zero downtime and smooth functionality of facilities.",
     },
-    {
-      title: "Arabia Project",
+      {
+      title: "Landmark Project",
       desc:
         "A landmark project contributing to the urban development of Arabia, focused on modern infrastructure and world-class construction standards.",
       icon: Building2,
       details:
         "Landmark Arabia is a mixed-use development project featuring commercial, residential, and leisure spaces designed with modern architecture and sustainability in mind.",
-    },
-    {
-      title: "MSLC — Construction",
-      desc:
-        "Major civil construction project under MSLC, delivering durable and high-quality structures with innovative engineering.",
-      icon: Hammer,
-      details:
-        "MSLC construction project includes industrial, residential, and infrastructure works. We incorporate modern design with advanced safety and quality standards.",
     },
   ];
 

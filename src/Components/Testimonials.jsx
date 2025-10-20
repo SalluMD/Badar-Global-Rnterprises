@@ -15,28 +15,35 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Mohammed Siraj",
       role: "CEO, TechVision Inc.",
       feedback:
         "Partnering with this company transformed our operations. Their scalable solutions and dedicated support team are unmatched.",
       avatar: "https://i.pravatar.cc/80?img=1",
     },
     {
-      name: "Michael Lee",
+      name: "Radhika Reddy",
+      role: "CEO, TechVision Inc.",
+      feedback:
+        "Partnering with this company transformed our operations. Their scalable solutions and dedicated support team are unmatched.",
+      avatar: "https://i.pravatar.cc/80?img=1",
+    },
+    {
+      name: "Chaitanya Kodela",
       role: "Head of IT, GlobalMart",
       feedback:
         "The team delivered beyond our expectations. Their expertise and professionalism helped us launch faster and stronger.",
       avatar: "https://i.pravatar.cc/80?img=5",
     },
     {
-      name: "Aisha Khan",
+      name: "Sri Hari",
       role: "Director, FutureWorks",
       feedback:
         "Reliable, innovative, and customer-centric. We’ve seen tremendous growth after adopting their enterprise solutions.",
       avatar: "https://i.pravatar.cc/80?img=15",
     },
     {
-      name: "David Wilson",
+      name: "Srinath Kantharam",
       role: "CTO, FinTech Hub",
       feedback:
         "Excellent communication and fast delivery. They’re truly a partner we can rely on. Highly recommended!",

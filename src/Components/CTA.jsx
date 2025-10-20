@@ -37,8 +37,7 @@ export default function CTA() {
           transition={{ duration: 0.8 }}
           className="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-indigo-100"
         >
-          Partner with <span className="font-semibold">Badar Global Enterprises</span> to accelerate your digital transformation.  
-          We craft <span className="">scalable</span>, <span className="">innovative</span>, and <span className="">secure</span> solutions for your business growth.
+          Partner with <span className="font-semibold">Badar Global Enterprises. (BGE)</span>  to experience <span className="">scalable</span>, <span className="">innovative</span>, and <span className="">secure</span> solutions for your business growth.
         </motion.p>
 
         {/* Buttons */}
